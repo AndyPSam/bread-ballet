@@ -1,0 +1,221 @@
+*{
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes fadein{
+    from{opacity:0};
+    to{opacity:1};
+}
+
+h1{ font-weight: 600;}
+
+h2{ font-weight: 600;}
+
+h3{ font-weight: 600;}
+
+h4{ font-weight: 600;}
+
+h5{ font-weight: 600;}
+
+h6{ font-weight: 600;}
+
+p{
+    margin-bottom: 1rem;
+}
+
+a{
+    color: rgb(0, 81, 255);
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    z-index: 101;
+    position: fixed;
+    height: 5.1rem;
+    width: 100%;
+    padding: 0 10rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.navbar .tabs{
+    color: black;
+    height: 100%;
+    padding: 2rem 1rem;
+    white-space: nowrap;
+}
+
+.navbar .logo{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    white-space: nowrap;
+}
+
+.navbar .tabs:hover{
+    border-bottom: 0.5rem solid rgb(255, 217, 0);
+}
+
+.sidemenu {
+    height: 100%;
+    width: 0rem;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 5.1rem;
+    transition: 0.5s;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.sidemenu .tabs {
+    padding: 2rem 1rem;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1)
+}
+
+.sidemenu .tabs:hover {
+    border-right: 0.5rem solid rgb(255, 217, 0);
+}
+
+.sideContact{
+    padding: 2rem 1rem;
+    white-space: nowrap;
+}
+
+.subtext{
+    color: rgb(126, 126, 126);
+}
+
+.navCompensation{
+    height: 5.1rem;
+    width: 100%;
+}
+
+.banner{
+    /* height: 100%; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation: fadein 1s;
+    -moz-animation: fadein 1s;
+    -o-animation: fadein 1s;
+    animation: fadein 1s;
+    position: relative;
+}
+
+.banner img{
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.banner span{
+    font-size: 150%;
+    position: absolute;
+    bottom: 15%;
+    left: 10rem;
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+    text-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.67);
+}
+
+.content{
+    padding: 2rem 10rem;
+}
+
+.bgimg{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%
+}
+
+.wide{
+    width:100%;
+}
+
+.thin{
+    width: 50%;
+    display: inline-block;
+}
+
+.tall{
+    height: 100%;
+}
+
+.short{
+    height: 50%;
+}
+
+.footer{
+    background-color: rgb(221, 221, 221);
+}
+
+@media (max-width: 1280px){
+    .navbar{
+        padding: 0 5rem;
+    }
+
+    .banner span{
+        left: 5rem;
+    }
+
+    .content{
+        padding: 1rem 5rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .navbar{
+        padding: 0 3rem;
+    }
+
+    .banner span{
+        left: 3rem;
+        font-size: 100%;
+    }
+
+    .content{
+        padding: 1rem 3rem;
+    }
+}
+
+@media (max-width: 768px){
+    .navbar{
+        padding: 0 1rem;
+    }
+
+    .pages{
+        display: none;
+    }
+
+    .banner span{
+        left: 1rem;
+    }
+
+    .banner h1{
+        font-size: 150%;
+    }
+
+    .content{
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 479px){
+    .thin{
+        width: 100%;
+        display: block;
+    }
+
+}
